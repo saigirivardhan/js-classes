@@ -1,89 +1,69 @@
-console.log("hello sai")
-console.log("Working...")
+//not defined,undefined,null
 
-// Boolean - (True /False), Strings - (Words, sentence, mix of numbers and words(ex - address)), Number - (integer and decimal values), 2 ,4, 101, 23.50, 34.99 
+// console.log(myAge);//output is not defined
+ //any varaiable which we try to access but not declared will throw us a reference error:not defined
 
-"2, somelane, somecity - 711101"
-'2, somelane, somecity - 711101'
-"SIdhant", "907654321"
+//undefined - if a varaiable is declared but not assigned any value yet but if we try to access that
+// variable then we will get the eror as undefined//
+ let my;
+ console.log(my)
+ 
+//null - its a default value assigned by a user to the variable as long as the variable
+// has not been assigned its original  /updated
 
-// data types present in JS(Primitive)
-// WHat are Boolean Values - It has only two values True/False
 
-// What are Strings - Anything which is present inside the double quotes or the single  quotes are called as strings
+let sai = null;
+console.log(sai)
+ sai = 45;
+ console.log(sai)
 
-// Numbers - includes Integer and decimal values (2/3/34.66/99.99)
+//in global scope generally not to able  access block scope variable as long as theres let/const keywords, so it will give us an error of references
+//error: variable of not defined , but for var we can access them even on global scope space.
 
-// Variables - They are used to store the values which could be of any type i.e. Number type or String Type or Boolean type.
-
-// rules for assigning names to variables
-// try to make the variables name declarative
-// it uses Camel Case
-// Variable names are case sensitive 
-
-// fName, fname, Fname, fnAme, fnaMe, 
-
-// Keywords are of three types
-// let, var, const
-
-// -----declaraing / initializing/ redeclaring----
-
-// let - These keywords are used to as
-
-// Boolean -(true/false),string -(words,sentences,mix )
-// let - These keywords are used to assign variables with values
-// 1 . They can be declared in a line and then initialized with a value in anaother lines.
-// 2. They can be also declared and initialized in the same line
-// 3 . They cannot be redeclared.....But can be reinitialized....
-// 4. ******We cannot have Two Variables with same name in Let*******
-
-// const - These keywords are used to assign variables with values
-// 1. They can be declared and initialized in the same line only.
-// 2 . They cannot be redeclared.....
-// 3. But const "cant" be reinitialized also....
-// 4. ******We cannot have Two Variables with same name in const*******
+ {
+     var giri = 2;
+     let right = 34;
+ }
+ console.log(left)
+ var left;
+ left = 23;
+ console.log(left)
 
 
 
-// var - These keywords are used to assign variables with values
-// 1 . They can be declared in a line and then initialized with a value in another lines.
-// 2. They can be also declared and initialized in the same line
-// 3. They can be redeclared.....and also can be reinitialized....
-// 4. ******We can have Two or more Variables with same name in Var*******
+// hositing - Its only supported with that of var keywords and with the functions,
+// let and const keywords cant be supported
+
+//let keyword variables cannot be accessed before declaration /initialization
+// const keyword variables cannot be accessed before declaration /initialization
 
 
 
 
-let fName = "Sidhant";//declared and initialized in the same line
-let fname;
-fname = "Lakhi";
-console.log(fname);
-fname = "Lakhwinder";
-console.log(fname);
-
-const lname = "Gupta";
-// lname = "Vinci";
-console.log(lname);
+// var keyword variables are hoisted.
 
 
 
-var age = 25;
-// console.log(age);
+//note - for var keyword variables, if we try to access them before assiging values to the will give us  undefined
 
-var age;
-age = 26;
-// console.log(age);
-age = 27;
-console.log(age);
+//but the moment we declare  a vaule to it ,it will give us the assigned value.
 
-var age = 29;
-console.log(age);
+
+//functions are hoisted because of which we can call the function before declaring the function
+ 
+add(3,2);
+ 
+function add(a,b){
+    let result = a+b;
+    console.log(result);
+}
 
 
 
 
 
 
-var age = 24;
-var age = 57 *1;
-console.log(age)
+
+
+
+
